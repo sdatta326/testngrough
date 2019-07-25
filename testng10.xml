@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test thread-count="5" name="personal_loan">
+		<classes>
+
+			<class name="test.first">
+			<methods>
+			<include name="show">
+			</include>
+			</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="car_loan">
+		<classes>
+
+			<class name="test.second">
+			<methods>
+			<exclude name="display.*">
+			</exclude>
+			</methods>
+			</class>
+			<class name="test.third">
+			
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
